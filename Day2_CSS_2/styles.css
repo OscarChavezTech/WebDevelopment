@@ -1,0 +1,79 @@
+/*
+https://www.w3schools.com/css/css_comments.asp
+
+* {  CSS Reset to initialize fresh palette 
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+ */
+
+.PageTitle {
+	color: red;
+	background-color: white; /* Set background color to red */
+	padding: 50px 0;	/* Removes default gap at begginig of page due to h1 tag */
+	margin: 0;	/* Removes default gap at begginig of page due to h1 tag */
+	font-size: 50px;
+}
+
+body {
+	background-color: blue;
+	padding: 0;
+	margin: 0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/*To horizontally center a block element (like <div>), use margin: auto; */
+
+.centerDiv {
+      padding-top:100px;
+	   margin: auto;
+  	 width: 50%;
+  	 border: 3px solid white;
+  	 padding: 50px;
+     margin-top:20px;
+     margin-bottom: 20px;
+}
+
+.columns{
+  display:flex;
+  justify-content: center;
+  background-color: green;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.col-red {
+  display: flex;
+  flex-direction: column;
+  padding: 45px ;
+  background-color: red;
+  text-align: center;
+}
+
+
+.col-orange {
+  display: flex;
+  flex-direction: column;
+  padding: 45px ;
+  background-color: orange;
+  text-align: center;
+}
+
+
+.col-yellow {
+  display: flex;
+  flex-direction: column;
+  padding: 45px ;
+  background-color: yellow;
+  text-align: center;
+  color: red;
+}
