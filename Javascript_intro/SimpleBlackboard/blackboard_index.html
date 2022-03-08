@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			html, body {
+				text-align: center;
+				background-image: url('https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png');
+				margin: 0;
+    			height: 100%;
+			}
+			h1 {
+				background-color: yellow;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<span><h1> BlackJack </h1></span>
+		<span><h3> Would you like to play? </h3></span>
+		<span><button id ="startGameButton" onclick="startGame()"> Start Game </button></span>
+		<span><button id ="startGameButton" onclick="drawCard()"> Draw Another Card </button></span>
+		<span><h3 id="myCards"> Cards: </h3></p>
+		<span><h3 id="total"> Total: </h3></span>
+		
+
+		<span><h3 id="output"> </h3>
+
+		<script>
+			let firstCard = Math.floor(Math.random() * 10) + 1;
+			let secondCard = Math.floor(Math.random() * 10) + 1;
+			let cardArray = []
+			cardArray.push(firstCard)
+			cardArray.push(secondCard)
+			let sum = 0
+			// calculates sum
+			for (const element of cardArray) {
+  				console.log(element);
+  				sum = sum + element
+			}
+			//let sum = firstCard + secondCard
+			let myCards = document.getElementById("myCards")
+			let total = document.getElementById("total")
+			let output = document.getElementById("output")
+
+			let alertMessage = ""
+
+			function drawCard(){
+				console.log("drawing new card")
+				let newCard = Math.floor(Math.random() * 10) + 1;
+				let cardsOutput = "" 
+				cardArray.push(newCard)
+				sum = 0
+				for (const element of cardArray) {
+  					console.log(element)
+  					cardsOutput = cardsOutput + element + " "
+  					sum = sum + element
+				}
+				myCards.textContent = "Cards: " + cardsOutput
+				total.textContent = "Total: " + sum
+				if (sum == 21){
+					alertMessage = "BlackJack!"
+
+				} else if (sum < 21){
+					alertMessage = "Draw Another Card"
+				} else if (sum > 21 ){
+					alertMessage = "You Loose!"
+				}
+				output.textContent = alertMessage
+
+			}
+			function startGame(){
+				//alert("Button Pressed")
+				if (sum == 21){
+					alertMessage = "BlackJack!"
+
+				} else if (sum < 21){
+					alertMessage = "Draw Another Card"
+				} else if (sum > 21 ){
+					alertMessage = "You Loose!"
+				}
+				myCards.textContent = "Cards: " + firstCard + " " + secondCard
+				total.textContent = "Total: " + sum  
+				output.textContent = alertMessage
+			}
+
+
+		</script>
+	</body>
+</html>

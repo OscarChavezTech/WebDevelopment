@@ -9,21 +9,32 @@
 	<head>
 
 		<style>
+			.myButton {
+				background-color: blue;
+				text-align: center;
+			}
 
+			.container {
+				display: flex;
+				justify-content: center;
+				background-color: red;
+				flex-direction: column;
+				text-align: center;
+			}
 		</style>
 
 	</head>
 
 	<body>
-	<button onclick="ShowName()"> Show Name </button>
-	<h1 id="title"></h1>
-
+	<div class="container">
+		<span><button class="myButton" onclick="ShowName()"> Show Name </button></span>
+		<span><h1 id="title"></h1><span>	
+	</div>
 
 		<script>
 			function ShowName(){
 				console.log("Test")
 				let h1 = document.getElementById("title")
-
 				h1.innerText = "Oscar Chavez"
 			}
 		</script>
