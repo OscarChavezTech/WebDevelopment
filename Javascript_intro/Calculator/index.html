@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<body style="text-align: center">
+
+
+		<h1> Calculator v1 </h1>
+		<span id="number1"></span>
+		<span> </span>
+		<span id="number2"></span>
+		<div> 
+			<button onclick="add()"> Addition (+)</button> 
+			<button onclick="subtract()"> Subtract (-) </button> 
+			<button onclick="multiply()"> Multiply (*) </button> 
+			<button onclick="divide()"> Divide (/) </button> 
+			
+		</div>
+		<p id="output"><p>
+
+
+		<script>
+			let firstNumber = 8
+			let secondNumber = 2
+			document.getElementById("number1").textContent = firstNumber
+			document.getElementById("number2").textContent = secondNumber
+
+			let output = document.getElementById("output")
+			let answerDescription = "Computer Says: "
+
+			function add(){
+				sum = firstNumber + secondNumber
+				output.innerText = answerDescription + sum
+
+			}
+
+			function subtract() {
+				dif = firstNumber - secondNumber
+				output.innerText = answerDescription + dif
+			}
+
+			function divide(){
+				div = firstNumber / secondNumber
+				output.innerText = answerDescription + div
+			}
+
+			function multiply(){
+				prod = firstNumber * secondNumber
+				output.innerText = answerDescription + prod
+			}
+		</script>
+	</body>
+</html>

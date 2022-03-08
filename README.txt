@@ -1,8 +1,13 @@
 Full Stack Web Development
 3/1/2022
 Oscar Chavez
-100 Days Of Code
 
-Twitter
+LinkedIn:
+Youtube:
+Twitter:
+Website:
+
+
 #100DaysOfCode
-
+#WebDevelopment
+#FullStackDeveloper

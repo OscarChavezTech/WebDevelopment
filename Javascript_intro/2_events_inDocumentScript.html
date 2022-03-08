@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+	<body>
+		<h1> Javascript script inside html document </h1>
+		<button onclick=addText(this)> Haz Click! </button>
+		<p id="paragraph_1"> </p>
+
+
+
+
+		<script>
+			alert("Hello World!")
+			function addText(id){
+				id.innerText = "function name(parameter) {parameter.property = 'CustomProperty'}";
+			}
+		</script>
+
+	</body>
+</html>
