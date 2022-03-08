@@ -1,0 +1,29 @@
+<!DOCTYPE html >
+<!-- 
+use the document.getElementById(id) method to access and modify html element
+document.getElementById(id).innerText = "String" or int or bool
+id = HTML element. innerHTML property = text
+Changing the innerHTML property of an HTML element is a common way to display data in HTML.
+document.write() used for testing. will delete everything in html if called after document is loaded
+window.alert() used to alert user of a warning or to display data
+console.log() display data to the console. used for debugging
+window.print() tells the browser to print the contents of current window
+-->
+
+<html>
+	<body style="text-align: center;">
+
+		<h1> Javascript </h1>
+		<p> Text below is being set by javascript code: </p>
+		<p id="myParagraph"> </p>
+
+		<script>
+			let myParagraph = document.getElementById("myParagraph");
+			myParagraph.innerText = "Text set using document.getElementById('myParagraph')"
+
+			// document.write( " I changed this text using document.write")
+			console.log("console.log prints out to the console")
+
+		</script>
+	</body>
+</html>

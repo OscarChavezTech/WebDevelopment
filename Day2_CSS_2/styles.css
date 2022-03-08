@@ -34,7 +34,7 @@ body {
 /*To horizontally center a block element (like <div>), use margin: auto; */
 
 .centerDiv {
-      padding-top:100px;
+     padding-top:100px;
 	   margin: auto;
   	 width: 50%;
   	 border: 3px solid white;
@@ -76,4 +76,12 @@ body {
   background-color: yellow;
   text-align: center;
   color: red;
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  padding: 20px;
+  margin: auto;
+  justify-content: center;
 }
