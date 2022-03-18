@@ -9,10 +9,11 @@ img {
 
 body {
     color: #fff;
-    background: #1a1e26;
     font-size: 21px;
     font-family: 'PT Sans', sans-serif;
     line-height: 1.6;
+    background-image: linear-gradient(#00c7fc,#fff);
+    background-color: red;
 }
 
 h1, h2, h3 {

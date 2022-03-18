@@ -13,6 +13,11 @@ https://www.w3schools.com/css/css_comments.asp
 
  */
 
+html,body {
+
+  height: 100%;
+}
+
 .PageTitle {
 	color: red;
 	background-color: white; /* Set background color to red */

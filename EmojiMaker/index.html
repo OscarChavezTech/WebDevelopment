@@ -1,17 +1,37 @@
 <!DOCTYPE html>
-<head>
-	<link href="style.css" rel="stylesheet"/>
-</head>
+<html> 
+	<head>
+		<link href="style.css" rel="stylesheet"/>
+	</head>
 
-<body>
-	<h1> The Emoji Maker 3000 </h1>
-	<h2 id="output"></h2>
-	<input type="text" placeholder="start typing" id="input-field">
-	<button id="button1"> Add to beggining </button>
-	<button id="button2"> Add to end </button>
-	<button id="button3"> Remove from begging </button>
-	<button id="button4"> Remove from end </button>
+	<body>
+		<h1 class="PageTitle"> Array in JavaScript</h1>
+		<div class="output">
+			<h2 id="output"></h2>
+		</div>
+		<div class="input-wrapper">
+			<input type="text" placeholder="Enter Items" id="input-field">
+		</div>
+		<div class="button-wrapper">
+			<button class="blue-button" id="button1"> Add to beggining </button>
+			<button class="blue-button" id="button2"> Add to end </button>
+		</div>
+		<div class="button-wrapper">
+			<button class="red-button" id="button3"> Remove from begging </button>
+			<button class="red-button" id="button4"> Remove from end </button>
+		</div>
+		<div class= "local-storage">
+			<h2> Local Storage </h2>
+			<p  id="output-local-storage"> output local storage</p>
+		</div>
 
-	<script src="script.js"></script>
+		<script src="script.js"></script>
 
-</body>
+	</body>
+</html>
+
+<!-- 
+Object.keys(localStorage).forEach(function(key){
+   console.log(localStorage.getItem(key));
+});
+-->
